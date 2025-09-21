@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main{
+  background-image: url("assets/Images/bg.jpg");
+  height: 600px;
+}
+
+.box{
+  height: 600px;
+  background-color: rgba(0,0,0,0.72);
+}
+  
+body{
+  background-color: black;
+}
+
+nav{
+  height: 60px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav img{
+  height: 25px;
+}
+
+nav .btn-box{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+nav .btn{
+  padding: 5px 10px;
+  background-color: #E50914;
+  color: white;
+  border: transparent;
+  border-radius: 3px;
+}
+
+nav .lang{
+  padding: 4px 9px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.hero{
+  height: calc(600px - 65px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero> :nth-child(1){
+  font-size: clamp(12px, 2vw, 50px);
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.hero> :nth-child(2){
+  font-size: clamp(12px, 2vw, 50px);
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.hero> :nth-child(3){
+  font-size: clamp(12px, 2vw, 50px);
+  font-size: 15px;
+  text-align: center;
+}
+
+.hero input{
+  padding: 5px;
+  height: 32px;
+  width: 300px;
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid white;
+}
+
+.hero input::placeholder{
+  color: white;
+}
+
+.hero .btn{
+  width: 150px;
+  height: 40px;
+  background-color: #E50914;
+  color: white;
+  border: transparent;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*main body start */
+
+.sepration{
+  border: 2px solid #757575;
+  margin: 0;
+}
+
+
+.boxes{
+  margin: auto;
+  padding: 10px;
+  max-width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-span{
+  font-size: clamp(12px, 2vw, 20px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.sec-span> :nth-child(1){
+  font-weight: bold;
+  font-size: clamp(17px, 2vw, 30px);
+}
+
+
+.secImg{
+  position: relative;
+  width: 50%;
+}
+
+.secImg img{
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video{
+  width: 100%;
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+
+
+
+/*faq section*/
+
+.faq-box{
+  height: 520px;
+  padding-top: 20px;
+}
+
+.faq-box h3{
+  padding-left: 15px;
+}
+
+.faq-question{
+  color: white;
+  border: transparent;
+  background-color: #444444;
+  height: 60px;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+
+/* bottom email section*/
+.again-email{
+  height: 180px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.again-email> :nth-child(1){
+  font-size: clamp(15px, 2vw, 50px);
+  font-weight: bold;
+}
+
+.again-email input{
+  margin-top: 15px;
+  padding: 5px;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.again-email input::placeholder{
+  color: white;
+}
+
+
+.again-btn{
+  width: 150px;
+  height: 40px;
+  background-color: #E50914;
+  color: white;
+  border: transparent;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+/*footer section*/
+
+footer{
+  background-color: black;
+  color: #757575;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.questions {
+  margin-bottom: 20px;
+}
+
+.questions a {
+  color: #757575;
+  text-decoration: none;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-item a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+.lang-select {
+  margin-bottom: 20px;
+}
+
+.lang {
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid #757575;
+  color: #757575;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lang:hover {
+  color: white;
+  border-color: white;
+}
+
+.netflix-india {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
